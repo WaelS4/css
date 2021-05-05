@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Mon portfolio avec HTML 5 & CSS</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <img src="img/portfolio.png" alt="" id="top" />
+        <ul>
+          <li><a href="#home">Accueil</a></li>
+          <li><a href="#about">A Propos</a></li>
+          <li><a href="#work">Travail</a></li>
+          <li><a href="#resume">Formation</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="flag">
+          <input type="search" placeholder="Rechercher" name="the_search" />
+          <a href="./index.html" title="English version"
+            ><img src="img/en.png" alt="English version"
+          /></a>
+
+          <a href="./indexfr.html" title="Version Français"
+            ><img src="img/fr.png" alt="Français"
+          /></a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home">
+        <h1>Accueil</h1>
+        <p>Bienvenue dans le portfolio de Wael Sellami réalisé avec HTML 5
+          et  CSS</p>
+        <audio controls>
+          <source src="./media/acceuil.mp3" type="audio/mpeg" />
+          Veuillez vérifier l'extension audio</audio
+        ><br />
+
+        <iframe
+          width="848"
+          height="476"
+          src="https://www.youtube.com/embed/olJOZp57FWM"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </section>
+      <section>
+        <h1 id="about">A Propos</h1>
+        <a class="photo" href="./img/photo.jpg" target="_blank"
+          ><img src="img/photo.jpg" alt=""
+        /></a>
+
+        <h3>Wael Sellami</h3>
+
+        <img src="img/brith.png" alt="" />
+
+        04/04/1988
+
+        <img src="img/married.png" alt="" />
+
+        Marié
+
+        <img src="img/permis.png" alt="" />
+
+        Permis de conduire
+
+        <img src="img/local.png" alt="" />
+
+        Sfax
+      </section>
+      <section id="work">
+        <h1>Travail</h1>
+        <video width="640" height="480" controls autoplay>
+          <source src="./media/work.mp4" type="video/mp4" />
+          Veuillez vérifier l'extension vidéo.
+        </video>
+      </section>
+      <section>
+        <h1 id="resume">Formation</h1>
+        <img src="./img/progress.png" alt="progress" /><br />
+
+        <label for="learning">Progrès de l'apprentissage:</label>
+
+        <progress id="learning" max="100" value="14">14%</progress> 14%
+        <dl>
+          <dt>2021</dt>
+          <dd>The Full-Stack JavaScript Bootcamp</dd>
+          <dd>GOMYC{}DE</dd>
+
+          <dt>2012</dt>
+          <dd>Licence appliquée en technologie informatique et multimédia</dd>
+          <dd>Institut Supérieur D’informatique Et De Multimédia A Sfax</dd>
+          <dt>2009</dt>
+          <dd>Baccalauréat en informatique</dd>
+          <dd>Hedi Soussi</dd>
+        </dl>
+      </section>
+      <section id="contact">
+        <fieldset>
+          <legend>Coordonner</legend>
+
+          <a href="https://www.facebook.com/wael.sellami.tn" target="_blank">
+            <figure>
+              <img src="./img/facebook.png" alt="Facebook" />
+              <figcaption>Facebook</figcaption>
+            </figure>
+          </a>
+
+          <a href="https://www.instagram.com/wael.sellami.tn/" target="_blank">
+            <figure>
+              <img src="./img/instagram.png" alt="Instagram" />
+              <figcaption>Instagram</figcaption>
+            </figure>
+          </a>
+
+          <a href="https://www.linkedin.com/in/waelsellami/" target="_blank">
+            <figure>
+              <img src="./img/linkedin.png" alt="Linkedin" />
+              <figcaption>Linkedin</figcaption>
+            </figure>
+          </a>
+
+          <a href="tel:+21622364426">
+            <figure>
+              <img src="./img/phone.png" alt="phone" />
+              <figcaption>22 36 44 26</figcaption>
+            </figure>
+          </a>
+
+          <a href="mailto:wael.sellami.44@gmail.com">
+            <figure>
+              <img src="./img/Mail.png" alt="Mail" />
+              <figcaption>Mail</figcaption>
+            </figure>
+          </a>
+
+          <a href="https://github.com/WaelS4" target="_blank">
+            <figure>
+              <img src="./img/github.png" alt="Github" />
+              <figcaption>Github</figcaption>
+            </figure>
+          </a>
+        </fieldset>
+        <form action="#" method="get">
+          <h1>Contact</h1>
+          <label for="name">Prénom </label
+          ><input type="text" id="name" required /><br />
+
+          <label for="Last">Nom  </label
+          ><input type="text" id="Last" required /><br />
+
+          <label for="gsm">GSM</label
+          ><input
+            type="tel"
+            id="gsm"
+            required
+            pattern="[0-9]{8}"
+            placeholder="00000000"
+          /><br />
+
+          <label for="mail">Mail </label
+          ><input type="email" id="mail" required /><br />
+
+          <label for="brith">Date de naissance </label>
+          <input type="date" id="brith" required /><br />
+
+          <label for="place">Lieu de naissance  </label>
+
+          <select id="place">
+            <option value="0">Choisissez votre ville</option>
+            <option value="TUNIS">TUNIS</option>
+            <option value="ARIANA">ARIANA</option>
+            <option value="BEN AROUS">BEN AROUS</option>
+            <option value="MANOUBA">MANOUBA</option>
+            <option value="NABEUL">NABEUL</option>
+            <option value="ZAGHOUAN">ZAGHOUAN</option>
+            <option value="BIZERTE">BIZERTE</option>
+            <option value="BEJA">BEJA</option>
+            <option value="JENDOUBA">JENDOUBA</option>
+            <option value="KEF">KEF</option>
+            <option value="SILIANA">SILIANA</option>
+            <option value="KAIROUAN">KAIROUAN</option>
+            <option value="KASSERINE">KASSERINE</option>
+            <option value="SIDI BOUZID">SIDI BOUZID</option>
+            <option value="SOUSSE">SOUSSE</option>
+            <option value="MONASTIR">MONASTIR</option>
+            <option value="MAHDIA">MAHDIA</option>
+            <option value="SFAX">SFAX</option>
+            <option value="GAFSA">GAFSA</option>
+            <option value="TOZEUR">TOZEUR</option>
+            <option value="KEBILI">KEBILI</option>
+            <option value="GABES">GABES</option>
+            <option value="MEDNINE">MEDNINE</option>
+            <option value="TATAOUINE">TATAOUINE</option></select
+          ><br />
+
+          <label for="message">Votre message </label>
+
+          <textarea id="message" rows="4" cols="45" required>
+          Écrivez votre message
+        </textarea
+          ><br />
+
+          <input type="submit" value="Submit" />
+          <input type="reset" value="Reset" />
+        </form>
+        <h4>Adresse</h4>
+        <p>Route Mahdia Km 7 ,Sakiet Eddaier 3011 Sfax, Tunisia</p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3276.35612722702!2d10.779855714408207!3d34.7969811855649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1301d392c240061d%3A0x3dff25d6a3142fb1!2sAssurances%20STAR%20Wael%20Sellami%20Code%20633!5e0!3m2!1sfr!2stn!4v1620204291709!5m2!1sfr!2stn"
+          width="800"
+          height="200"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </section>
+    </main>
+
+    <footer>
+      © Wael Sellami
+
+      <a href="#top" class="fusé"
+        ><img src="img/fusé.png" alt="Retourner au haut de la page" title="décoller vers le ciel"
+      /></a>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,92 @@
+body {
+  font-family: Roboto;
+  margin: 0px 0px;
+  /*text-align: center;*/
+}
+main {
+  margin: 20px 20px;
+}
+nav {
+  padding-top: 10px;
+  background-color: black;
+}
+nav ul {
+  display: inline-block;
+}
+nav li {
+  display: inline-block;
+  width: 80px;
+}
+nav li a {
+  color: white;
+  text-decoration: none;
+}
+nav li a:hover {
+  color: yellow;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+.flag {
+  position: absolute;
+  top: 10px;
+  right: 50px;
+}
+.fusé {
+  position: fixed;
+  bottom: 0px;
+  right: 10px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  text-align: center;
+}
+
+.fusé:hover,
+fieldset a:hover,
+fieldset a:hover img {
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
+  color: white;
+}
+
+legend {
+  font-weight: bolder;
+  background-color: rgb(122, 122, 122);
+  height: 20px;
+  padding: 5px 10px;
+  color: white;
+}
+fieldset {
+  float: left;
+  background-color: rgb(122, 122, 122);
+  width: 200px;
+  margin-right: 50px;
+}
+
+#home {
+  text-align: center;
+}
+
+form {
+  text-align: left;
+}
+label {
+  width: 110px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 6px;
+}
+footer {
+  padding: 20px 0;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+#work {
+  background-color: black;
+  text-align: center;
+  color: white;
+}
