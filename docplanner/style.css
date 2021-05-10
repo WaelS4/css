@@ -11,6 +11,7 @@ header {
   top: 0;
   width: 100%;
   background-color: rgb(255, 255, 255, 0.98);
+  box-shadow: 0 0px 2px 0 rgba(0, 0, 0, 0.2);
 }
 .demo {
   background: transparent;
